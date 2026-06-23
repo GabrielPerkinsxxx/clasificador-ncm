@@ -330,7 +330,7 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                             "Recup.", "Recup.", "Recup.", "Recup.",
                         ],
                     })
-                    st.dataframe(_trib_df, width="stretch", hide_index=True)
+                    st.dataframe(_trib_df, use_container_width=True, hide_index=True)
                     st.caption("ℹ️ AEC = Arancel Externo Común (referencia normativa Mercosur). **No se suma al DIE ni impacta en ningún cálculo.**")
 
                     _ct = _ficha["carga_tributaria"]
@@ -364,7 +364,7 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                     if st.button(
                         "✅ Seleccionar esta partida",
                         key=f"hallada_{idx}",
-                        width="stretch",
+                        use_container_width=True,
                         type="primary",
                         help="Validar esta clasificación. Se crea una carpeta con descripción + documentos.",
                     ):
@@ -437,12 +437,12 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                                 _btn_confirmar = st.form_submit_button(
                                     "✅ Confirmar y crear carpeta",
                                     type="primary",
-                                    width="stretch",
+                                    use_container_width=True,
                                 )
                             with _fcol2:
                                 _btn_cancelar = st.form_submit_button(
                                     "Cancelar",
-                                    width="stretch",
+                                    use_container_width=True,
                                 )
 
                             if _btn_cancelar:
@@ -627,7 +627,7 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                 "🔬 Refinar con esta información",
                 key=f"_btn_refinar_{idx}",
                 type="primary",
-                width="stretch",
+                use_container_width=True,
                 disabled=not _hay_contenido,
                 help=(
                     "Adjuntá archivos o pegá texto en al menos un tema."
@@ -789,7 +789,7 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                                 f"📌 Adoptar NCM refinado ({_ncm_ref})",
                                 key=f"_adoptar_ref_{idx}",
                                 type="primary",
-                                width="stretch",
+                                use_container_width=True,
                                 help="Reemplaza el NCM sugerido por el refinado. Al confirmar la partida se guardará el refinado.",
                             ):
                                 sug["ncm"] = _ncm_ref
@@ -800,7 +800,7 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                             if st.button(
                                 "🗑️ Descartar refinamiento",
                                 key=f"_descartar_ref_{idx}",
-                                width="stretch",
+                                use_container_width=True,
                             ):
                                 ss.pop(f"_refinamiento_{idx}", None)
                                 st.rerun()
@@ -808,7 +808,7 @@ def _renderizar_sugerencia_ia(sug: dict, idx: int, mercaderia_label: str):
                         if st.button(
                             "🗑️ Descartar refinamiento",
                             key=f"_descartar_ref_solo_{idx}",
-                            width="stretch",
+                            use_container_width=True,
                         ):
                             ss.pop(f"_refinamiento_{idx}", None)
                             st.rerun()
@@ -913,7 +913,7 @@ def _renderizar_resultado_ia(res: dict, mercaderia_label: str, descripcion_para_
             label_visibility="collapsed",
         )
     with _fb3:
-        _btn_fb = st.button("Enviar", type="primary", width="stretch", key="btn_fb_ncm")
+        _btn_fb = st.button("Enviar", type="primary", use_container_width=True, key="btn_fb_ncm")
 
     if _btn_fb:
         if not _ncm_correcto.strip():
@@ -994,7 +994,7 @@ with tab_clasificador:
             {"Categoría": "Folletos / Catálogos",  "Información requerida": "Material comercial (si se dispone)",                                         "Ejemplo": "PDF, links, brochures digitales"},
             {"Categoría": "Información técnica",   "Información requerida": "Fichas técnicas, planos, manuales, datos dimensionales, certificados",       "Ejemplo": "Ficha del proveedor, plano con medidas"},
         ])
-        st.dataframe(_plantilla, width="stretch", hide_index=True)
+        st.dataframe(_plantilla, use_container_width=True, hide_index=True)
 
     _modo = st.radio(
         "¿Cómo querés clasificar?",
@@ -1033,9 +1033,9 @@ with tab_clasificador:
                     key="gmail_query_main",
                 )
             with _gs2:
-                _btn_buscar = st.button("🔍 Buscar", key="btn_gmail_buscar", width="stretch")
+                _btn_buscar = st.button("🔍 Buscar", key="btn_gmail_buscar", use_container_width=True)
             with _gs3:
-                _btn_recientes = st.button("📬 Recientes", key="btn_gmail_recientes", width="stretch")
+                _btn_recientes = st.button("📬 Recientes", key="btn_gmail_recientes", use_container_width=True)
 
             if ss.get("gmail_thread_id"):
                 _t_sel = next((t for t in ss.get("gmail_threads", []) if t["id"] == ss["gmail_thread_id"]), None)
@@ -1107,7 +1107,7 @@ with tab_clasificador:
             _btn_x = st.form_submit_button(
                 "🤖 Leer y clasificar",
                 type="primary",
-                width="stretch",
+                use_container_width=True,
             )
 
         if _btn_x:
@@ -1287,7 +1287,7 @@ with tab_clasificador:
             _btn_clasificar = st.form_submit_button(
                 "🤖 Clasificar producto",
                 type="primary",
-                width="stretch",
+                use_container_width=True,
             )
 
         if _btn_clasificar:
@@ -1368,7 +1368,7 @@ with tab_clasificador:
                     label_visibility="collapsed",
                 )
             with _ec2:
-                _btn_add_dest = st.button("➕ Agregar", key="btn_add_dest", width="stretch")
+                _btn_add_dest = st.button("➕ Agregar", key="btn_add_dest", use_container_width=True)
 
             if _btn_add_dest:
                 _nd = _nuevo_dest.strip().lower()
@@ -1589,7 +1589,7 @@ with tab_clasificador:
                     if st.button(
                         f"📨 Enviar a {len(_dests_sel)} destinatario(s)",
                         type="primary",
-                        width="stretch",
+                        use_container_width=True,
                         key="btn_enviar_mail",
                     ):
                         with st.spinner("Enviando..."):
@@ -1651,7 +1651,7 @@ with tab_consulta:
                             "Recup.", "Recup.", "Recup.", "Recup.",
                         ],
                     }
-                    st.dataframe(pd.DataFrame(_trib_data), width="stretch", hide_index=True)
+                    st.dataframe(pd.DataFrame(_trib_data), use_container_width=True, hide_index=True)
                     st.caption("ℹ️ AEC = Arancel Externo Común (referencia normativa Mercosur). **No se suma al DIE ni impacta en ningún cálculo.**")
 
                 with _tc2:
@@ -1712,7 +1712,7 @@ with tab_consulta:
                     "Posición SIM", "DIE %", "TE %", "IVA %", "IVA Ad. %",
                     "Ganancias %", "IIBB %", "DUMPING", "BK", "SEGURIDAD ELECTRICA", "My Pyme",
                 ] if c in _df_filtro.columns]
-                st.dataframe(_df_filtro[_cols_mostrar].head(100), width="stretch", hide_index=True)
+                st.dataframe(_df_filtro[_cols_mostrar].head(100), use_container_width=True, hide_index=True)
                 if len(_df_filtro) > 100:
                     st.caption(f"Mostrando primeras 100 de {len(_df_filtro)} posiciones.")
 
@@ -1773,7 +1773,7 @@ with tab_catalogo:
                 _df_prev.columns = [str(c).strip() for c in _df_prev.columns]
 
                 st.markdown("**Previsualización (primeras 5 filas):**")
-                st.dataframe(_df_prev.head(5), width="stretch")
+                st.dataframe(_df_prev.head(5), use_container_width=True)
 
                 _mapeo_auto = cat.detectar_mapeo_columnas(list(_df_prev.columns))
                 st.markdown("**Mapeo de columnas detectado:**")
@@ -1846,7 +1846,7 @@ with tab_catalogo:
                 _df_show = _df_cat
 
             st.write(f"Mostrando **{len(_df_show)}** de {len(_df_cat)} productos.")
-            st.dataframe(_df_show, width="stretch", hide_index=True, height=400)
+            st.dataframe(_df_show, use_container_width=True, hide_index=True, height=400)
 
             _dcol1, _dcol2 = st.columns(2)
             with _dcol1:
@@ -1860,7 +1860,7 @@ with tab_catalogo:
                     _buffer.getvalue(),
                     file_name="catalogo_cliente.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                    width="stretch",
+                    use_container_width=True,
                 )
             with _dcol2:
                 # Eliminar productos
@@ -1992,7 +1992,7 @@ with tab_fichas:
                 file_name=f"partidas_halladas_{datetime.datetime.now().strftime('%Y%m%d')}.xlsx",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                 type="primary",
-                width="stretch",
+                use_container_width=True,
             )
 
         st.divider()
@@ -2116,7 +2116,7 @@ with tab_fichas:
                                                 _arch.read_bytes(),
                                                 file_name=_arch.name,
                                                 key=f"dl_t_{_fid}_{_slug_tema}_{_arch.name}",
-                                                width="stretch",
+                                                use_container_width=True,
                                             )
                                         except Exception as e:
                                             st.write(f"• {_arch.name} (error leyendo: {e})")
@@ -2157,7 +2157,7 @@ with tab_fichas:
                                 f"💾 Guardar {_lbl_tema}",
                                 key=f"save_t_{_fid}_{_slug_tema}",
                                 type="primary",
-                                width="stretch",
+                                use_container_width=True,
                             ):
                                 _guardados = 0
                                 _errores = []
