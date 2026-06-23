@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/persistencia/fichas_arancelarias.json
+data/gmail_credentials.json
+data/persistencia/gmail_token.json
+data/CLASIFICADOR NCM:data:gmail_credentials.json
+.streamlit/secrets.toml

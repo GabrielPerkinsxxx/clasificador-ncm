@@ -1,0 +1,57 @@
+{
+  "id": "95069100199_cama_reformer_de_pilates_y_mini_reformer_de_pilate_20260619163123",
+  "ncm": "9506.91.00.199",
+  "nombre_partida": "Cama Reformer de Pilates y Mini Reformer de Pilates (dos modelos)",
+  "mercaderia": "Cama Reformer de Pilates y Mini Reformer de Pilates (dos modelos)",
+  "descripcion_fina": "Camas",
+  "sku": "",
+  "marca": "MAX PILATES — modelos: Reformer y Mini Reformer",
+  "observaciones_cliente": "",
+  "confianza": "alta",
+  "justificacion": "El Reformer de Pilates es un aparato específicamente diseñado para la práctica del método Pilates, disciplina encuadrada dentro de la cultura física y la gimnasia. La partida 9506 comprende artículos y material para cultura física, gimnasia y atletismo no expresados en otra parte. La subpartida 9506.91 agrupa específicamente los artículos para cultura física, gimnasia o atletismo. No existe una posición más específica en el NCM para equipos de Pilates, por lo que corresponde clasificar en 'los demás' (9506.91.00.199). El producto no incorpora electrónica ni motores, es de uso exclusivamente mecánico/físico. La clasificación propuesta por los despachantes Gabriel Perri y Julieta Brosio (9506.91.00.199) es correcta y coincide con la lógica de la RGI 1 (texto de la partida) y RGI 6 (nivel de subpartida). Aplica tanto para el Reformer como para el Mini Reformer, ya que ambos son variantes del mismo tipo de aparato.",
+  "rgi_aplicadas": [
+    "RGI 1",
+    "RGI 6"
+  ],
+  "capitulo": "95 — Juguetes, juegos y artículos para deporte; sus partes y accesorios",
+  "partida": "9506 — Artículos y material para cultura física, gimnasia, atletismo, otros deportes (incluido el tenis de mesa) o juegos al aire libre, no expresados ni comprendidos en otra parte de este Capítulo; piscinas (piletas de natación) y piscinas (piletas) para niños",
+  "subpartida_1g": "9506.91 — Artículos y material para cultura física, gimnasia o atletismo",
+  "subpartida_2g": "9506.91.00 — Artículos y material para cultura física, gimnasia o atletismo",
+  "apertura_sim": "9506.91.00.199 — Los demás artículos y material para cultura física, gimnasia o atletismo (los demás)",
+  "tributos": {
+    "die_pct": 35.0,
+    "aec_pct": 20.0,
+    "te_pct": 3.0,
+    "dii_pct": 0.0,
+    "iva_pct": 21.0,
+    "iva_ad_pct": 20.0,
+    "ganancias_pct": 6.0,
+    "iibb_pct": 2.5
+  },
+  "flags": {
+    "dumping": false,
+    "seguridad_electrica": true,
+    "bk": false,
+    "mipyme": false
+  },
+  "carga_tributaria": {
+    "irrecuperable_pct": 38.0,
+    "recuperable_pct": 68.31,
+    "total_sobre_cif_pct": 106.31,
+    "erogacion_por_100_cif": 206.31
+  },
+  "intervenciones": [
+    "INTI (posible certificación de seguridad de producto para algunos mercados de destino)",
+    "No se identifican intervenciones de organismos argentinos obligatorias para la exportación de este tipo de producto bajo NCM 9506.91.00.199. Sin perjuicio de los requisitos del país importador."
+  ],
+  "fecha": "2026-06-19T16:31:23.306698",
+  "validada": true,
+  "carpeta": "data/persistencia/partidas_halladas/95069100199_cama_reformer_de_pilates_y_mini_reformer_de_pilate_20260619163123",
+  "archivos": [
+    "Ficha técnica Reformer_Dimensiones y materiales.pdf",
+    "Ficha técnica Mini Reformer_Dimensiones y materiales.pdf",
+    "image.png"
+  ],
+  "refinamiento_tarifar": null,
+  "documentacion_por_tema": {}
+}

@@ -1,0 +1,58 @@
+{
+  "id": "39262000000_guante_de_protecci_n_laboral_t_rmico_e_impermeable_20260622133008",
+  "ncm": "3926.20.00.000",
+  "nombre_partida": "Guante de protección laboral térmico e impermeable",
+  "mercaderia": "Guante de protección laboral térmico e impermeable – Modelo A01 Arctic Fox 303 Winter Gloves",
+  "descripcion_fina": "Guantes",
+  "sku": "1",
+  "marca": "Arctic Fox 303 Winter Gloves – Modelo A01",
+  "observaciones_cliente": "",
+  "confianza": "alta",
+  "justificacion": "El guante presenta como material constitutivo esencial y determinante de su carácter el recubrimiento de látex natural (caucho vulcanizado/plástico en sentido amplio del SA) en doble capa que cubre la totalidad de la superficie exterior e interior, confiriéndole impermeabilidad total y resistencia mecánica. Conforme a la Nota 2(a) del Capítulo 39 y la Nota de Sección VII, cuando un artículo está recubierto de plástico y dicho recubrimiento es visible a simple vista y constituye la característica esencial del producto, se clasifica como manufactura de plástico. El tejido de punto de poliéster actúa como soporte estructural y el forro como elemento secundario de confort térmico. La RGI 1 remite a la partida 3926; la RGI 6 confirma la subpartida 3926.20 que incluye expresamente guantes de plástico/caucho. Esta clasificación es consistente con criterios del Comité del SA (criterio de recubrimiento visible) y con la práctica aduanera argentina para guantes de látex con soporte textil.",
+  "rgi_aplicadas": [
+    "RGI 1",
+    "RGI 3 (b)",
+    "RGI 6"
+  ],
+  "capitulo": "39 — Plásticos y sus manufacturas",
+  "partida": "3926 — Las demás manufacturas de plástico y manufacturas de las demás materias de las partidas 3901 a 3914",
+  "subpartida_1g": "3926.20 — Prendas de vestir y sus accesorios (incluidos los guantes, mitones y manoplas)",
+  "subpartida_2g": "3926.20.00 — Prendas de vestir y sus accesorios (incluidos los guantes, mitones y manoplas)",
+  "apertura_sim": "3926.20.00.000 — Prendas de vestir y accesorios (incluidos guantes, mitones y manoplas) de plástico",
+  "tributos": {
+    "die_pct": 18.0,
+    "aec_pct": 18.0,
+    "te_pct": 3.0,
+    "dii_pct": 0.0,
+    "iva_pct": 21.0,
+    "iva_ad_pct": 20.0,
+    "ganancias_pct": 6.0,
+    "iibb_pct": 2.5
+  },
+  "flags": {
+    "dumping": false,
+    "seguridad_electrica": false,
+    "bk": false,
+    "mipyme": false
+  },
+  "carga_tributaria": {
+    "irrecuperable_pct": 21.0,
+    "recuperable_pct": 59.89,
+    "total_sobre_cif_pct": 80.9,
+    "erogacion_por_100_cif": 180.89
+  },
+  "intervenciones": [
+    "SRT – Superintendencia de Riesgos del Trabajo (certificación obligatoria de Equipos de Protección Personal conforme Res. SRT 299/2011 y concordantes para EPP comercializados en Argentina)",
+    "IRAM – Instituto Argentino de Normalización y Certificación (normas técnicas aplicables a EPP)",
+    "AFIP/DGA – Aduana Argentina (control de valor, origen, licencias de importación)",
+    "Secretaría de Comercio – Licencia de Importación No Automática (LNA) potencialmente aplicable a guantes de protección según posición arancelaria"
+  ],
+  "fecha": "2026-06-22T13:30:08.201394",
+  "validada": true,
+  "carpeta": "data/persistencia/partidas_halladas/39262000000_guante_de_protecci_n_laboral_t_rmico_e_impermeable_20260622133008",
+  "archivos": [
+    "Guante de Protección Laboral – Modelo A01- Ficha Técnica del Producto.pdf"
+  ],
+  "refinamiento_tarifar": null,
+  "documentacion_por_tema": {}
+}

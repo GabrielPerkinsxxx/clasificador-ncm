@@ -1,0 +1,10 @@
+[theme]
+# Paleta GP COMEX — Manual de Identidad Visual v1.0
+primaryColor = "#415FC3"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F6F6"
+textColor = "#1E1E1E"
+font = "sans serif"
+
+[server]
+headless = false
